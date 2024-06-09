@@ -48,7 +48,7 @@ const Player = () => {
   }, [isPlaying])
 
   const {data: nowPlaying} = useNowPlayingQuery()
-  const {data: points, refetch: refetchPoints} = useGetPointsQuery(uuid, {pollingInterval: 30000, skip: !uuid})
+  const {data: points, refetch: refetchPoints} = useGetPointsQuery(uuid, {pollingInterval: 5000, skip: !uuid})
 
   useEffect(() => {
     refetchPoints()
