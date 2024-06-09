@@ -1,0 +1,12 @@
+#root {
+  width: 100%;
+  background: rgb(33, 33, 33);
+  color: rgb(175, 180, 184);
+}
+
+.App {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
