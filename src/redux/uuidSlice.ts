@@ -20,7 +20,7 @@ const uuidSlice = createSlice({
             return state
         }
     }
-}) 
+})
 
 export default uuidSlice.reducer
 export const { getUUID } = uuidSlice.selectors
