@@ -1,4 +1,4 @@
-import React, { FC, RefObject, useEffect, useRef, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import styles from './styles.module.scss';
 import { useDisplay } from '../../hooks';
 import { animate, motion, useMotionTemplate, useMotionValue, useTransform } from 'framer-motion';

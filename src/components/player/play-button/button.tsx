@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import clsx from 'clsx';
 
 import { ReactComponent as Play } from '../../../assets/playAudio.svg';
