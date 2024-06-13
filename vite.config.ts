@@ -6,7 +6,8 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), basicSsl(), svgr()],
+  // plugins: [react(), basicSsl(), svgr()],
+  plugins: [react(), svgr()],
   build: {
     outDir: './docs'
   },
