@@ -16,10 +16,6 @@
   line-height: 125%;
 }
 
-.nav {
-  position: absolute;
-  padding-top: 10px;
-}
 
 .timer {
   position: absolute;
@@ -173,4 +169,46 @@
 
 .iconColor {
   color: #ffffff;
+}
+
+
+.round {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/effect-circle.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  & > img {
+    object-fit: contain;
+    height: 80%;
+  }
+  overflow: hidden;
+}
+
+
+
+.reward {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 86px;
+  gap: 10px;
+
+  @media screen and (max-width: 992px) {
+    margin-top: unset;
+    order: 2;
+  }
+
+  span {
+    margin-left: 13px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 12px;
+    }
+  }
 }

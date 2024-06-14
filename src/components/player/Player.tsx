@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { getUUID } from "../../redux/uuidSlice";
 import { useGetPointsQuery, useNowPlayingQuery } from "../../redux/songsApi";
 import PlayerBg from "./playerBg/PlayerBg";
+import expIcon from '../../assets/exp.png'
 
 const Player = () => {
   const audioRef = useRef();
@@ -16,7 +17,6 @@ const Player = () => {
   const uuid = useSelector(getUUID);
 
   const toggle = () => setPlaying((s) => !s);
-
 
   useEffect(() => {
     if (audioRef.current && uuid) {
@@ -57,9 +57,6 @@ const Player = () => {
   return (
     <section className={styles.container}>
       <PlayerBg />
-      <div className={styles.nav}>
-        {!!uuid && <div className={styles.navTitle}>{points || 0} points</div>}
-      </div>
       <div className={styles.wrap}>
         <div className={styles.head}>
           <div>
@@ -95,6 +92,14 @@ const Player = () => {
             </div> */}
         </div>
       </div>
+      {!!uuid && (
+        <div className={styles.reward}>
+          <div className={styles.round}>
+            <img src={expIcon} />
+          </div>
+          {points || 0}
+        </div>
+      )}
       {!!uuid && (
         <audio
           //@ts-ignore
