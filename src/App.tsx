@@ -2,7 +2,6 @@ import "./App.css";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
-import Pages from "./components/pages/Pages";
 import Player from "./components/player/Player";
 
 function App() {
