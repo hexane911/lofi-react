@@ -2,7 +2,8 @@ import "./App.css";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
-import Player from "./components/player/Player";
+// import Player from "./components/player/Player";
+import Pages from "./components/pages/Pages";
 
 function App() {
 
@@ -10,8 +11,8 @@ function App() {
     <Provider store={store}>
       <TonConnectUIProvider manifestUrl="https://hexane911.github.io/lofi-react/tonconnect-manifest.json">
         <div className="App">
-          {/* <Pages /> */}
-          <Player />
+          <Pages />
+          {/* <Player /> */}
         </div>
       </TonConnectUIProvider>
     </Provider>
